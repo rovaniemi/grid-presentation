@@ -1,0 +1,39 @@
+.container {
+  display: grid;
+  grid-template-columns: 100px 1fr 100px;
+  grid-template-rows: 100px 1fr 1fr;
+  grid-template-areas:
+    "header header header"
+    "sidebar-1 content sidebar-2"
+    "sidebar-1 content sidebar-2";
+}
+
+.content {
+  height: 500px;
+  grid-area: content;
+  background: red;
+}
+
+.sidebar-1 {
+  height: 500px;
+  grid-area: sidebar-1;
+  background: blue;
+}
+
+.sidebar-2 {
+  height: 500px;
+  grid-area: sidebar-2;
+  background: green;
+}
+
+.header {
+  grid-area: header;
+  background: salmon;
+}
+
+@media (max-width: 768px) {
+  .container {
+    grid-template-columns: 1fr;
+    grid-template-areas: "header" "sidebar-1" "content" "sidebar-2";
+  }
+}

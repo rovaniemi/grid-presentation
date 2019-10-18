@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../assets/style.css" />
+    <title>Grid fundamentals</title>
+  </head>
+
+  <body>
+    <div class="faces">
+      <div class="face">
+        <img class="face-img" src="/assets/images/felix.jpg" />
+        <div class="face-details">
+          <h2>Felix</h2>
+          <p class="face-text">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum sed
+            sint doloremque repellat, iste debitis. Lorem ipsum dolor sit amet
+            consectetur adipisicing elit. Ipsum sed sint doloremque repellat,
+            iste debitis.
+          </p>
+        </div>
+      </div>
+      <div class="face">
+        <img class="face-img" src="/assets/images/henri.jpg" />
+        <div class="face-details">
+          <h2>Henri</h2>
+          <p class="face-text">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum sed
+            sint doloremque repellat, iste debitis. Lorem ipsum dolor sit amet
+            consectetur adipisicing elit. Ipsum sed sint doloremque repellat,
+            iste debitis.
+          </p>
+        </div>
+      </div>
+      <div class="face">
+        <img class="face-img" src="/assets/images/mauri.jpg" />
+        <div class="face-details">
+          <h2>Mauri</h2>
+          <p class="face-text">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum sed
+            sint doloremque repellat, iste debitis.
+          </p>
+        </div>
+      </div>
+      <div class="face">
+        <img class="face-img" src="/assets/images/jonne-jr.jpg" />
+        <div class="face-details">
+          <h2>jonne</h2>
+          <p class="face-text">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum sed
+            sint doloremque repellat, iste debitis. Lorem ipsum dolor sit amet
+            consectetur adipisicing elit. Ipsum sed sint doloremque repellat,
+            iste debitis. Lorem ipsum dolor sit amet consectetur adipisicing
+            elit. Ipsum sed sint doloremque repellat, iste debitis.
+          </p>
+        </div>
+      </div>
+      <div class="face">
+        <img class="face-img" src="/assets/images/jonne-sr.jpg" />
+        <div class="face-details">
+          <h2>Jonne</h2>
+          <p class="face-text">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum sed
+            sint doloremque repellat, iste debitis. Lorem ipsum dolor sit amet
+            consectetur adipisicing elit. Ipsum sed sint doloremque repellat,
+            iste debitis.
+          </p>
+        </div>
+      </div>
+      <div class="face">
+        <img class="face-img" src="/assets/images/jerry.jpg" />
+        <div class="face-details">
+          <h2>Jerry</h2>
+          <p class="face-text">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum sed
+            sint doloremque repellat, iste debitis. Lorem ipsum dolor sit amet
+            consectetur adipisicing elit. Ipsum sed sint doloremque repellat,
+            iste debitis.
+          </p>
+        </div>
+      </div>
+      <div class="face">
+        <img class="face-img" src="/assets/images/pinja.jpg" />
+        <div class="face-details">
+          <h2>Pinja</h2>
+          <p class="face-text">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum sed
+            sint doloremque repellat, iste debitis. Lorem ipsum dolor sit amet
+            consectetur adipisicing elit. Ipsum sed sint doloremque repellat,
+            iste debitis.
+          </p>
+        </div>
+      </div>
+      <div class="face">
+        <img class="face-img" src="/assets/images/janne.jpg" />
+        <div class="face-details">
+          <h2>Janne</h2>
+          <p class="face-text">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum sed
+            sint doloremque repellat, iste debitis. Lorem ipsum dolor sit amet
+            consectetur adipisicing elit. Ipsum sed sint doloremque repellat,
+            iste debitis. Lorem ipsum dolor sit amet consectetur adipisicing
+            elit. Ipsum sed sint doloremque repellat, iste debitis.
+          </p>
+        </div>
+      </div>
+      <div class="face">
+        <img class="face-img" src="/assets/images/jyri.jpg" />
+        <div class="face-details">
+          <h2>Jyri</h2>
+          <p class="face-text">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum sed
+            sint doloremque repellat, iste debitis. Lorem ipsum dolor sit amet
+            consectetur adipisicing elit. Ipsum sed sint doloremque repellat,
+            iste debitis. Lorem ipsum dolor sit amet consectetur adipisicing
+            elit. Ipsum sed sint doloremque repellat, iste debitis.
+          </p>
+        </div>
+      </div>
+    </div>
+  </body>
+
+  <style>
+    .face-img {
+      width: 100%;
+    }
+
+    .face {
+      display: grid;
+      grid-template-columns: 200px 1fr;
+      grid-gap: 20px;
+      background: rgba(255, 255, 255, 0.2);
+      padding: 20px;
+      color: white;
+      font-weight: 400;
+      align-items: center;
+    }
+
+    .faces {
+      display: grid;
+      grid-gap: 20px;
+      grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+    }
+
+    h2 {
+      font-size: 40px;
+    }
+  </style>
+</html>

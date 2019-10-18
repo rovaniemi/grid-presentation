@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../assets/style.css" />
+    <title>Grid fundamentals</title>
+  </head>
+
+  <body>
+    <div class="container">
+      <div class="header">Header</div>
+      <div class="sidebar-1">Sidebar 1</div>
+      <div class="content">Content</div>
+      <div class="sidebar-2">Sidebar 2</div>
+      <div class="footer">Sidebar 2</div>
+    </div>
+  </body>
+
+  <style>
+    .container {
+      display: grid;
+      grid-template-columns: 1fr 6fr 1fr;
+      grid-template-rows: 100px 40vh 45vh 100px;
+      grid-template-areas:
+        "header header header"
+        "sidebar-1 content sidebar-2"
+        "sidebar-1 content sidebar-2"
+        "footer footer footer";
+    }
+
+    .header {
+      grid-area: header;
+      background: red;
+    }
+
+    .sidebar-1 {
+      grid-area: sidebar-1;
+      background: blue;
+    }
+
+    .sidebar-2 {
+      grid-area: sidebar-2;
+      background: green;
+    }
+
+    .content {
+      grid-area: content;
+      background: violet;
+    }
+
+    .footer {
+      grid-area: footer;
+      background: black;
+    }
+
+    @media (max-width: 768px) {
+      .container {
+        grid-template-columns: 1fr;
+        grid-template-rows: 100px 40vh 45vh 40vh 100px;
+        grid-template-areas:
+          "header"
+          "sidebar-1"
+          "content"
+          "sidebar-2"
+          "footer";
+      }
+    }
+  </style>
+</html>
